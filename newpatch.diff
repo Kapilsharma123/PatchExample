@@ -1,0 +1,176 @@
+From cc2cd819991044e3f48d6cd911719351039cba94 Mon Sep 17 00:00:00 2001
+From: ABC <ABC@gmail.com>
+Date: Wed, 18 May 2022 12:38:33 +0530
+Subject: [PATCH] no message
+
+---
+ PatchExample.xcodeproj/project.pbxproj.rej  | 33 +++++++++++++++
+ PatchExample/Base.lproj/Main.storyboard     |  3 ++
+ PatchExample/Base.lproj/Main.storyboard.rej | 47 +++++++++++++++++++++
+ PatchExample/ViewController.swift.rej       | 10 +++++
+ PatchExample/thirdViewController.swift      | 29 +++++++++++++
+ 5 files changed, 122 insertions(+)
+ create mode 100644 PatchExample.xcodeproj/project.pbxproj.rej
+ create mode 100644 PatchExample/Base.lproj/Main.storyboard.rej
+ create mode 100644 PatchExample/ViewController.swift.rej
+ create mode 100644 PatchExample/thirdViewController.swift
+
+diff --git a/PatchExample.xcodeproj/project.pbxproj.rej b/PatchExample.xcodeproj/project.pbxproj.rej
+new file mode 100644
+index 0000000..3c2e7c0
+--- /dev/null
++++ b/PatchExample.xcodeproj/project.pbxproj.rej
+@@ -0,0 +1,33 @@
++diff a/PatchExample.xcodeproj/project.pbxproj b/PatchExample.xcodeproj/project.pbxproj	(rejected hunks)
++@@ -16,6 +16,7 @@
++ 		0A963A052834CF8A00D4B86C /* PatchExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A963A042834CF8A00D4B86C /* PatchExampleTests.swift */; };
++ 		0A963A0F2834CF8A00D4B86C /* PatchExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A963A0E2834CF8A00D4B86C /* PatchExampleUITests.swift */; };
++ 		0A963A112834CF8A00D4B86C /* PatchExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A963A102834CF8A00D4B86C /* PatchExampleUITestsLaunchTests.swift */; };
+++		0A963A202834D1B200D4B86C /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A963A1F2834D1B200D4B86C /* thirdViewController.swift */; };
++ /* End PBXBuildFile section */
++ 
++ /* Begin PBXContainerItemProxy section */
++@@ -49,6 +50,7 @@
++ 		0A963A0A2834CF8A00D4B86C /* PatchExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatchExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
++ 		0A963A0E2834CF8A00D4B86C /* PatchExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchExampleUITests.swift; sourceTree = "<group>"; };
++ 		0A963A102834CF8A00D4B86C /* PatchExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+++		0A963A1F2834D1B200D4B86C /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
++ /* End PBXFileReference section */
++ 
++ /* Begin PBXFrameworksBuildPhase section */
++@@ -102,6 +104,7 @@
++ 				0A9639ED2834CF8700D4B86C /* AppDelegate.swift */,
++ 				0A9639EF2834CF8700D4B86C /* SceneDelegate.swift */,
++ 				0A9639F12834CF8700D4B86C /* ViewController.swift */,
+++				0A963A1F2834D1B200D4B86C /* thirdViewController.swift */,
++ 				0A9639F32834CF8800D4B86C /* Main.storyboard */,
++ 				0A9639F62834CF8900D4B86C /* Assets.xcassets */,
++ 				0A9639F82834CF8900D4B86C /* LaunchScreen.storyboard */,
++@@ -260,6 +263,7 @@
++ 			files = (
++ 				0A9639F22834CF8800D4B86C /* ViewController.swift in Sources */,
++ 				0A9639EE2834CF8700D4B86C /* AppDelegate.swift in Sources */,
+++				0A963A202834D1B200D4B86C /* thirdViewController.swift in Sources */,
++ 				0A9639F02834CF8700D4B86C /* SceneDelegate.swift in Sources */,
++ 			);
++ 			runOnlyForDeploymentPostprocessing = 0;
+diff --git a/PatchExample/Base.lproj/Main.storyboard b/PatchExample/Base.lproj/Main.storyboard
+index 819d523..5916c73 100644
+--- a/PatchExample/Base.lproj/Main.storyboard
++++ b/PatchExample/Base.lproj/Main.storyboard
+@@ -81,5 +81,8 @@
+         <systemColor name="systemPinkColor">
+             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+         </systemColor>
++        <systemColor name="systemYellowColor">
++            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
++        </systemColor>
+     </resources>
+ </document>
+diff --git a/PatchExample/Base.lproj/Main.storyboard.rej b/PatchExample/Base.lproj/Main.storyboard.rej
+new file mode 100644
+index 0000000..e793184
+--- /dev/null
++++ b/PatchExample/Base.lproj/Main.storyboard.rej
+@@ -0,0 +1,47 @@
++diff a/PatchExample/Base.lproj/Main.storyboard b/PatchExample/Base.lproj/Main.storyboard	(rejected hunks)
++@@ -23,16 +23,45 @@
++                                 <state key="normal" title="Button"/>
++                                 <buttonConfiguration key="configuration" style="plain" title="second"/>
++                             </button>
+++                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veu-4v-jR2">
+++                                <rect key="frame" x="161" y="679" width="146" height="92"/>
+++                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+++                                <color key="backgroundColor" red="0.161579953" green="0.59186764979999995" blue="0.2536771176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+++                                <state key="normal" title="Button"/>
+++                                <buttonConfiguration key="configuration" style="plain" title="THIRD"/>
+++                                <connections>
+++                                    <action selector="Action3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Hh-19-69D"/>
+++                                </connections>
+++                            </button>
++                         </subviews>
++                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
++                         <color key="backgroundColor" systemColor="systemPinkColor"/>
++                     </view>
++                     <navigationItem key="navigationItem" id="t0Q-1H-s7c"/>
+++                    <connections>
+++                        <segue destination="soD-DJ-InN" kind="push" identifier="third" id="RQx-BO-UC4"/>
+++                    </connections>
++                 </viewController>
++                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
++             </objects>
++             <point key="canvasLocation" x="997.10144927536237" y="92.410714285714278"/>
++         </scene>
+++        <!--Third View Controller-->
+++        <scene sceneID="EbR-G9-e2A">
+++            <objects>
+++                <viewController id="soD-DJ-InN" customClass="thirdViewController" customModule="PatchExample" customModuleProvider="target" sceneMemberID="viewController">
+++                    <view key="view" contentMode="scaleToFill" id="c6Y-0I-6PJ">
+++                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+++                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+++                        <viewLayoutGuide key="safeArea" id="a83-Po-2dO"/>
+++                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+++                    </view>
+++                    <navigationItem key="navigationItem" id="veN-LU-Jht"/>
+++                </viewController>
+++                <placeholder placeholderIdentifier="IBFirstResponder" id="du0-EC-QyE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+++            </objects>
+++            <point key="canvasLocation" x="928" y="775"/>
+++        </scene>
++         <!--Navigation Controller-->
++         <scene sceneID="WDf-3X-eHk">
++             <objects>
+diff --git a/PatchExample/ViewController.swift.rej b/PatchExample/ViewController.swift.rej
+new file mode 100644
+index 0000000..4ba4bca
+--- /dev/null
++++ b/PatchExample/ViewController.swift.rej
+@@ -0,0 +1,10 @@
++diff a/PatchExample/ViewController.swift b/PatchExample/ViewController.swift	(rejected hunks)
++@@ -15,5 +15,8 @@ class ViewController: UIViewController {
++     }
++ 
++ 
+++    @IBAction func Action3(_ sender: Any) {
+++        self.performSegue(withIdentifier: "third", sender: self)
+++    }
++ }
++ 
+diff --git a/PatchExample/thirdViewController.swift b/PatchExample/thirdViewController.swift
+new file mode 100644
+index 0000000..20d10c9
+--- /dev/null
++++ b/PatchExample/thirdViewController.swift
+@@ -0,0 +1,29 @@
++//
++//  thirdViewController.swift
++//  PatchExample
++//
++//  Created by Htcuser on 18/05/22.
++//
++
++import UIKit
++
++class thirdViewController: UIViewController {
++
++    override func viewDidLoad() {
++        super.viewDidLoad()
++
++        // Do any additional setup after loading the view.
++    }
++    
++
++    /*
++    // MARK: - Navigation
++
++    // In a storyboard-based application, you will often want to do a little preparation before navigation
++    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
++        // Get the new view controller using segue.destination.
++        // Pass the selected object to the new view controller.
++    }
++    */
++
++}
+-- 
+2.31.0
+
