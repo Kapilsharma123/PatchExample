@@ -15,5 +15,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func actionsecond(_ sender: Any) {
+        self.performSegue(withIdentifier: "second", sender: self)
+    }
 }
 

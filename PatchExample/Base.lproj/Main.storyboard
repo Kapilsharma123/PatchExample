@@ -22,16 +22,38 @@
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="second"/>
+                                <connections>
+                                    <action selector="actionsecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ret-3x-GfV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="t0Q-1H-s7c"/>
+                    <connections>
+                        <segue destination="FcC-Bm-McY" kind="push" identifier="second" id="D3k-DX-Vz2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="997.10144927536237" y="92.410714285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="olZ-kG-X1A">
+            <objects>
+                <viewController id="FcC-Bm-McY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yog-aq-7vN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RVB-bj-brJ"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O1f-eZ-m5Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7I-7a-dYt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="79"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WDf-3X-eHk">
@@ -53,6 +75,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
