@@ -1,0 +1,10 @@
+diff a/PatchExample/ViewController.swift b/PatchExample/ViewController.swift	(rejected hunks)
+@@ -15,5 +15,8 @@ class ViewController: UIViewController {
+     }
+ 
+ 
++    @IBAction func Action3(_ sender: Any) {
++        self.performSegue(withIdentifier: "third", sender: self)
++    }
+ }
+ 

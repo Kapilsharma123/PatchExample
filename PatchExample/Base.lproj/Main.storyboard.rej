@@ -1,0 +1,47 @@
+diff a/PatchExample/Base.lproj/Main.storyboard b/PatchExample/Base.lproj/Main.storyboard	(rejected hunks)
+@@ -23,16 +23,45 @@
+                                 <state key="normal" title="Button"/>
+                                 <buttonConfiguration key="configuration" style="plain" title="second"/>
+                             </button>
++                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veu-4v-jR2">
++                                <rect key="frame" x="161" y="679" width="146" height="92"/>
++                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                <color key="backgroundColor" red="0.161579953" green="0.59186764979999995" blue="0.2536771176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
++                                <state key="normal" title="Button"/>
++                                <buttonConfiguration key="configuration" style="plain" title="THIRD"/>
++                                <connections>
++                                    <action selector="Action3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Hh-19-69D"/>
++                                </connections>
++                            </button>
+                         </subviews>
+                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                     </view>
+                     <navigationItem key="navigationItem" id="t0Q-1H-s7c"/>
++                    <connections>
++                        <segue destination="soD-DJ-InN" kind="push" identifier="third" id="RQx-BO-UC4"/>
++                    </connections>
+                 </viewController>
+                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+             </objects>
+             <point key="canvasLocation" x="997.10144927536237" y="92.410714285714278"/>
+         </scene>
++        <!--Third View Controller-->
++        <scene sceneID="EbR-G9-e2A">
++            <objects>
++                <viewController id="soD-DJ-InN" customClass="thirdViewController" customModule="PatchExample" customModuleProvider="target" sceneMemberID="viewController">
++                    <view key="view" contentMode="scaleToFill" id="c6Y-0I-6PJ">
++                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
++                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
++                        <viewLayoutGuide key="safeArea" id="a83-Po-2dO"/>
++                        <color key="backgroundColor" systemColor="systemYellowColor"/>
++                    </view>
++                    <navigationItem key="navigationItem" id="veN-LU-Jht"/>
++                </viewController>
++                <placeholder placeholderIdentifier="IBFirstResponder" id="du0-EC-QyE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
++            </objects>
++            <point key="canvasLocation" x="928" y="775"/>
++        </scene>
+         <!--Navigation Controller-->
+         <scene sceneID="WDf-3X-eHk">
+             <objects>
