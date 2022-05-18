@@ -12,12 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("branch2")
-        print("branch3")
-        print("branch12")
-        print("branch22")
-        print("branch13")
-        print("branch23")
+       
     }
 
 
