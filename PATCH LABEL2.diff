@@ -1,0 +1,30 @@
+From 60b473cdf5be5fc7bdda525ed1cab7e180f14407 Mon Sep 17 00:00:00 2001
+From: ABC <ABC@gmail.com>
+Date: Wed, 18 May 2022 16:03:27 +0530
+Subject: [PATCH] Label2Added
+
+---
+ PatchExample/Base.lproj/Main.storyboard | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/PatchExample/Base.lproj/Main.storyboard b/PatchExample/Base.lproj/Main.storyboard
+index ebb0b64..4e99dcb 100644
+--- a/PatchExample/Base.lproj/Main.storyboard
++++ b/PatchExample/Base.lproj/Main.storyboard
+@@ -26,6 +26,13 @@
+                                     <action selector="actionsecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ret-3x-GfV"/>
+                                 </connections>
+                             </button>
++                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UR0-PQ-dhh">
++                                <rect key="frame" x="101" y="664" width="199" height="56"/>
++                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
++                                <nil key="textColor"/>
++                                <nil key="highlightedColor"/>
++                            </label>
+                         </subviews>
+                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+-- 
+2.31.0
+

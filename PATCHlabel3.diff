@@ -1,0 +1,30 @@
+From fc2d02e9bcebfa0e33ffb660a3539f1dc9e1252b Mon Sep 17 00:00:00 2001
+From: ABC <ABC@gmail.com>
+Date: Wed, 18 May 2022 16:05:57 +0530
+Subject: [PATCH] no message
+
+---
+ PatchExample/Base.lproj/Main.storyboard | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/PatchExample/Base.lproj/Main.storyboard b/PatchExample/Base.lproj/Main.storyboard
+index ebb0b64..173493c 100644
+--- a/PatchExample/Base.lproj/Main.storyboard
++++ b/PatchExample/Base.lproj/Main.storyboard
+@@ -26,6 +26,13 @@
+                                     <action selector="actionsecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ret-3x-GfV"/>
+                                 </connections>
+                             </button>
++                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0E-TO-Yro">
++                                <rect key="frame" x="44" y="438" width="117" height="44"/>
++                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
++                                <nil key="textColor"/>
++                                <nil key="highlightedColor"/>
++                            </label>
+                         </subviews>
+                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+-- 
+2.31.0
+
