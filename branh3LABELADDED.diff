@@ -1,4 +1,16 @@
-diff a/PatchExample/Base.lproj/Main.storyboard b/PatchExample/Base.lproj/Main.storyboard	(rejected hunks)
+From 743d0902a87537a69847e3745908a04e2ed69bf3 Mon Sep 17 00:00:00 2001
+From: ABC <ABC@gmail.com>
+Date: Wed, 18 May 2022 12:50:19 +0530
+Subject: [PATCH] branch3LABELADDED
+
+---
+ PatchExample/Base.lproj/Main.storyboard | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/PatchExample/Base.lproj/Main.storyboard b/PatchExample/Base.lproj/Main.storyboard
+index 819d523..5a6eb12 100644
+--- a/PatchExample/Base.lproj/Main.storyboard
++++ b/PatchExample/Base.lproj/Main.storyboard
 @@ -26,6 +26,13 @@
                                      <action selector="actionsecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ret-3x-GfV"/>
                                  </connections>
@@ -13,3 +25,6 @@ diff a/PatchExample/Base.lproj/Main.storyboard b/PatchExample/Base.lproj/Main.st
                          </subviews>
                          <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                          <color key="backgroundColor" systemColor="systemPinkColor"/>
+-- 
+2.31.0
+
