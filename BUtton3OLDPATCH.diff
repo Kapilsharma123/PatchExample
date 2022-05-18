@@ -1,0 +1,42 @@
+From 789325b716336e835eaee970517b4493fd7fdefa Mon Sep 17 00:00:00 2001
+From: ABC <ABC@gmail.com>
+Date: Wed, 18 May 2022 15:44:34 +0530
+Subject: [PATCH] BranchButton3PATCH
+
+---
+ PatchExample/Base.lproj/Main.storyboard | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+diff --git a/PatchExample/Base.lproj/Main.storyboard b/PatchExample/Base.lproj/Main.storyboard
+index ebb0b64..aa7abf9 100644
+--- a/PatchExample/Base.lproj/Main.storyboard
++++ b/PatchExample/Base.lproj/Main.storyboard
+@@ -46,6 +46,15 @@
+                     <view key="view" contentMode="scaleToFill" id="Yog-aq-7vN">
+                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
++                        <subviews>
++                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsM-he-z7y">
++                                <rect key="frame" x="92" y="433" width="173" height="102"/>
++                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                <color key="backgroundColor" systemColor="systemMintColor"/>
++                                <state key="normal" title="Button"/>
++                                <buttonConfiguration key="configuration" style="plain" title="Button3"/>
++                            </button>
++                        </subviews>
+                         <viewLayoutGuide key="safeArea" id="RVB-bj-brJ"/>
+                         <color key="backgroundColor" systemColor="systemBrownColor"/>
+                     </view>
+@@ -78,6 +87,9 @@
+         <systemColor name="systemBrownColor">
+             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+         </systemColor>
++        <systemColor name="systemMintColor">
++            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
++        </systemColor>
+         <systemColor name="systemPinkColor">
+             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+         </systemColor>
+-- 
+2.31.0
+

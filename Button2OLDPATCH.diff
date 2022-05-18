@@ -1,0 +1,30 @@
+From 2766edf102a0083eb0a4fe901de27c0b4283b0cb Mon Sep 17 00:00:00 2001
+From: ABC <ABC@gmail.com>
+Date: Wed, 18 May 2022 15:43:23 +0530
+Subject: [PATCH] BranchButton2PATCH
+
+---
+ PatchExample/Base.lproj/Main.storyboard | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/PatchExample/Base.lproj/Main.storyboard b/PatchExample/Base.lproj/Main.storyboard
+index ebb0b64..288fe1f 100644
+--- a/PatchExample/Base.lproj/Main.storyboard
++++ b/PatchExample/Base.lproj/Main.storyboard
+@@ -26,6 +26,13 @@
+                                     <action selector="actionsecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ret-3x-GfV"/>
+                                 </connections>
+                             </button>
++                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGf-Vp-U6k">
++                                <rect key="frame" x="110" y="604" width="200" height="78"/>
++                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
++                                <color key="backgroundColor" red="0.16078431369999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
++                                <state key="normal" title="Button"/>
++                                <buttonConfiguration key="configuration" style="plain" title="Button2"/>
++                            </button>
+                         </subviews>
+                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+-- 
+2.31.0
+
