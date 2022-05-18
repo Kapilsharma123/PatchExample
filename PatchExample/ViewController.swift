@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         print("branch2")
         print("branch3")
+        print("branch12")
+        print("branch22")
     }
 
 
